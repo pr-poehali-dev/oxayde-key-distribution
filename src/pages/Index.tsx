@@ -12,7 +12,11 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const handleTelegramClick = () => {
+  const handleBuyClick = () => {
+    window.open('https://t.me/ebashygeroinss', '_blank');
+  };
+
+  const handleFreeClick = () => {
     window.open('https://t.me/PashaCoder', '_blank');
   };
 
@@ -46,7 +50,7 @@ const Index = () => {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button
-            onClick={handleTelegramClick}
+            onClick={handleBuyClick}
             size="lg"
             className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold text-xl px-10 py-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] min-w-[280px]"
           >
@@ -101,7 +105,7 @@ const Index = () => {
               </p>
               <div className="mt-8 flex justify-center">
                 <Button
-                  onClick={handleTelegramClick}
+                  onClick={handleBuyClick}
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold px-8 py-4"
                 >
                   <Icon name="MessageCircle" size={20} className="mr-2" />
@@ -126,7 +130,7 @@ const Index = () => {
           </DialogHeader>
           <div className="flex justify-center pt-4">
             <Button
-              onClick={handleTelegramClick}
+              onClick={handleFreeClick}
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold px-8 py-6 text-lg"
             >
               <Icon name="MessageCircle" size={20} className="mr-2" />
