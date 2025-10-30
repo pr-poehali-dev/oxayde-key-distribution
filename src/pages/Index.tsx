@@ -17,7 +17,7 @@ const Index = () => {
   };
 
   const handleFreeClick = () => {
-    window.open('https://t.me/PashaCoder', '_blank');
+    window.open('https://t.me/ebashygeroinss', '_blank');
   };
 
   return (
@@ -125,7 +125,7 @@ const Index = () => {
               Free Key
             </DialogTitle>
             <DialogDescription className="text-center text-base pt-4 text-foreground/80">
-              Прорекламируй 25 друзьям и свяжись с нами в Telegram @PashaCoder
+              Прорекламируй 25 друзьям и свяжись с нами в Telegram @ebashygeroinss
             </DialogDescription>
           </DialogHeader>
           <div className="flex justify-center pt-4">
