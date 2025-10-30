@@ -92,7 +92,7 @@ const Index = () => {
               Free Key
             </DialogTitle>
             <DialogDescription className="text-center text-base pt-4 text-foreground/80">
-              Если хочешь получить ключ бесплатно, свяжись с нами в Telegram!
+              Прорекламируй 25 друзьям и свяжись с нами в Telegram @PashaCoder
             </DialogDescription>
           </DialogHeader>
           <div className="flex justify-center pt-4">
