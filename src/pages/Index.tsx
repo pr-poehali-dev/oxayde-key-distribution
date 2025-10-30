@@ -17,7 +17,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
       
       <div className="absolute inset-0 opacity-20">
@@ -25,7 +25,9 @@ const Index = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary rounded-full blur-[128px]"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl w-full text-center space-y-12 animate-fade-in">
+      <div className="relative z-10 flex flex-col">
+        <div className="min-h-screen flex items-center justify-center p-4">
+          <div className="max-w-4xl w-full text-center space-y-12 animate-fade-in">
         <div className="space-y-6">
           <div className="inline-block">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -80,6 +82,33 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Icon name="Users" size={16} className="text-primary" />
             <span>24/7 Support</span>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <div className="relative z-10 py-16 px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-card/80 backdrop-blur-sm border-2 border-primary/30 rounded-3xl p-8 md:p-12 shadow-[0_0_60px_rgba(139,92,246,0.3)] animate-fade-in">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <Icon name="BadgeCheck" className="text-primary" size={48} />
+              </div>
+              <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-4">
+                Я оригинальный продавец
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Покупайте только у официального поставщика. Остерегайтесь мошенников!
+              </p>
+              <div className="mt-8 flex justify-center">
+                <Button
+                  onClick={handleTelegramClick}
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold px-8 py-4"
+                >
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  Связаться в Telegram
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
